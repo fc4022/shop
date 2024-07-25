@@ -14,6 +14,9 @@
             box-sizing: border-box;
             font-family: 'DM Sans', sans-serif;
             background-color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .header {
             width: 100%;
@@ -50,6 +53,7 @@
             color: red;
         }
         .content {
+            flex: 1;
             padding: 80px 20px 20px 20px;
             display: flex;
             flex-direction: column;
@@ -64,7 +68,9 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            position: relative;
         }
         .product-image {
             width: 40%;
@@ -97,19 +103,28 @@
             font-weight: bold;
             color: #000;
         }
+        .fixed-text {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Pinyon Script', cursive;
+            font-size: 100px;
+            color: rgba(255, 0, 0, 0.5);
+            z-index: 1001;
+            pointer-events: none;
         }
-
-.fixed-text {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Pinyon Script', cursive;
-    font-size: 100px;
-    color: red;
-    z-index: 1;
-    pointer-events: none;
-}
+        .footer {
+            padding: 10px 0;
+            font-family: 'DM Sans', sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: italic;
+            text-align: left;
+            color: black;
+            font-size: 10px;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
@@ -149,7 +164,9 @@
                 <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula elit at eros vestibulum, at ullamcorper turpis fringilla.</div>
                 <div class="product-price">€25.00</div>
             </div>
-         </div>
-         <div class="fixed-text">COMING SOON</div>
+        </div>
+    </div>
+    <div class="fixed-text">coming soon!</div>
+    <div class="footer">&copy; 2024 r2s. all rights reserved. mg.</div>
 </body>
 </html>

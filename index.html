@@ -97,6 +97,19 @@
             font-weight: bold;
             color: #000;
         }
+        }
+
+.fixed-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pinyon Script', cursive;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    pointer-events: none;
+}
     </style>
 </head>
 <body>
@@ -136,6 +149,7 @@
                 <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula elit at eros vestibulum, at ullamcorper turpis fringilla.</div>
                 <div class="product-price">€25.00</div>
             </div>
+               <div class="fixed-text">COMING SOON</div>
         </div>
     </div>
 </body>

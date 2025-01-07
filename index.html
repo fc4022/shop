@@ -103,17 +103,6 @@
             font-weight: bold;
             color: #000;
         }
-        .fixed-text {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: 'Pinyon Script', cursive;
-            font-size: 100px;
-            color: rgba(255, 0, 0, 0.5);
-            z-index: 1001;
-            pointer-events: none;
-        }
         .footer {
             padding: 10px 0;
             font-family: 'DM Sans', sans-serif;
@@ -136,37 +125,22 @@
     </div>
     <div class="content">
         <div class="product-container">
-            <div class="product-image">
-                <img src="https://i.pinimg.com/564x/c0/c8/89/c0c889710e1cd2268554f9a7f9145a6b.jpg" alt="Product 1">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Product 1</div>
-                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula elit at eros vestibulum, at ullamcorper turpis fringilla.</div>
-                <div class="product-price">€20.00</div>
-            </div>
-        </div>
-        <div class="product-container">
-            <div class="product-image">
-                <img src="https://i.pinimg.com/564x/c0/c8/89/c0c889710e1cd2268554f9a7f9145a6b.jpg" alt="Product 2">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Product 2</div>
-                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula elit at eros vestibulum, at ullamcorper turpis fringilla.</div>
-                <div class="product-price">€30.00</div>
-            </div>
-        </div>
-        <div class="product-container">
-            <div class="product-image">
-                <img src="https://i.pinimg.com/564x/c0/c8/89/c0c889710e1cd2268554f9a7f9145a6b.jpg" alt="Product 3">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Product 3</div>
-                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula elit at eros vestibulum, at ullamcorper turpis fringilla.</div>
-                <div class="product-price">€25.00</div>
-            </div>
-        </div>
+    <div class="product-image">
+        <a href="/shop/camoprint">
+            <img src="https://i.pinimg.com/564x/c0/c8/89/c0c889710e1cd2268554f9a7f9145a6b.jpg" alt="Product 1">
+        </a>
     </div>
-    <div class="fixed-text">coming soon!</div>
+    <div class="product-details">
+        <div class="product-title">
+            <a href="/shop/camoprint">Product 1</a>
+        </div>
+        <div class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula elit at eros vestibulum, at ullamcorper turpis fringilla.
+        </div>
+        <div class="product-price">€20.00</div>
+    </div>
+</div>
+    </div>
     <div class="footer">&copy; R2S. all rights reserved. mg.</div>
 </body>
 </html>
